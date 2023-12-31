@@ -1,6 +1,6 @@
-## Script New Year 
+## Script New Year 2024
 
-![dth99](https://github.com/dth99/Script-New_Year/blob/main/2021.gif)
+![tua2542](https://github.com/tua2542/Script-New_Year_2024/blob/main/Happy%20New%20Year%202024.png)
 
 ## Requirements
 
