@@ -1,6 +1,6 @@
 ## Script New Year 2024
 
-![tua2542](https://github.com/tua2542/Script-New_Year_2024/blob/main/Happy%20New%20Year%202024.png)
+![tua2542](https://github.com/tua2542/Script-New_Year_2024/blob/main/Happy%20New%20Year%202024.gif)
 
 ## Requirements
 
