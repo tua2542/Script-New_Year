@@ -2,8 +2,11 @@
 # Script for New Year - dth99 2021
 
 # Config
-name='          I wish you a Happy New Year - By dth99'
+caption='Here`s to health, wealth, and all-around success.' 
+wish='Happy New Year 2024 !' 
+name='by Sakdipat O. '
 correction=0
+
 
 trap "tput reset; tput cnorm; exit" 2
 
@@ -11,12 +14,11 @@ trap "tput reset; tput cnorm; exit" 2
 tput civis
 
 line=6
-middle_column=$(($(tput cols) / 3))
-middle_column=$((middle_column-0))
+middle_column=$(($(tput cols) / 2))
 color=0
 
 while true; do
-    randomValue=$((RANDOM % 12 + 12)) ##
+    randomValue=$((RANDOM % 16 + 16)) ##
     from_middle=$((middle_column-randomValue))
     column=$((RANDOM % (randomValue) * 2 + 1 + from_middle))
     tput setaf $color; tput bold
@@ -27,7 +29,7 @@ while true; do
 
     color=$(((color+7)%8))
 
-    from_middle=-8 # from left column
+    from_middle=-16 # from left column
     for l in H A P P Y
     do
         tput cup $((line+1)) $((middle_column+from_middle))
@@ -36,7 +38,7 @@ while true; do
         sleep 0
     done
 
-    from_middle=0
+    from_middle=-8
     for l in N E W
     do
         tput cup $((line+2)) $((middle_column+from_middle))
@@ -55,7 +57,7 @@ while true; do
     done
 
     from_middle=16
-    for l in 2 0 2 1
+    for l in 2 0 2 4
     do
         tput cup $((line+4)) $((middle_column+from_middle))
         echo $l
@@ -76,6 +78,26 @@ while true; do
     tput cup 11 $column
     echo '#'
 
-   #tput cup $((line+12)) #$((middle_column-(${#name}/2)))
-    echo "                               "$name
+    caption_length=${#caption}
+    caption_start=$((middle_column - caption_length / 2))
+    tput cup 13 $caption_start
+    echo "$caption"
+
+
+    wish_length=${#wish}
+    wish_start=$((middle_column - wish_length / 2))
+    tput cup 15 $wish_start
+    echo "$wish"
+	
+    name_length=${#name}
+    name_start=$((middle_column - name_length / 2))
+    tput cup 17 $name_start
+    echo "$name"
+    
 done
+
+
+
+
+
+
