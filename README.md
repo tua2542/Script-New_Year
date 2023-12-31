@@ -17,9 +17,9 @@ cd Script-New_Year
 ```
 
 ```bash
-chmod +x New_Year_2021.sh
+chmod +x New_Year_2024.sh
 ```
 
 ```bash
-bash New_Year_2021.sh
+bash New_Year_2024.sh
 ```
