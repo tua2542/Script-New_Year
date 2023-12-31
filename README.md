@@ -1,4 +1,4 @@
-## Script New Year 
+## Script New Year 2024
 
 ![dth99](https://github.com/dth99/Script-New_Year/blob/main/2021.gif)
 
