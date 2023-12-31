@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script for New Year - dth99 2021
+# Script for New Year - Sakdipat 2024
 
 # Config
 caption='Here`s to health, wealth, and all-around success.' 
